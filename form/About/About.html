@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  position: relative;
+  height: 100px;
+  background-color: #007BFF;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+.header-titles {
+  display: flex;
+  gap: 20px; /* Space between titles */
+}
+.header-item {
+  margin: 0;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #007BFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header-item:hover {
+  background-color: #0056b3;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  flex: 1;
+}
+
+h2 {
+  color: #007BFF;
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #007BFF;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+     <div class="header-titles">
+      <h1 class="header-item">About Us</h1>
+      <h1 class="header-item"><a href="form.html">Contact Us</a></h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="image-container">
+        <img src="image.png" alt="Team Image" width="250px">
+      </div>
+      <div class="content">
+        <h2>Who We Are</h2>
+        <p>
+          Welcome to our website! We are a passionate team dedicated to delivering the best services for our clients. Our mission is to innovate and provide outstanding solutions in our field.
+        </p>
+        <button id="readMoreBtn">Read More</button>
+        <p id="extraContent" style="display: none;">
+          Our team values integrity, collaboration, and excellence. We strive to create a positive impact through our work and continuously grow to meet the ever-changing demands of the industry.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </footer>
+  <script src="About.js"></script>
+</body>
+</html>
